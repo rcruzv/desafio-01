@@ -6,10 +6,7 @@ function App() {
 	return (
 		<>
 			<Header />
-
-			<main>
-				<NewTask />
-			</main>
+			<NewTask />
 		</>
 	);
 }

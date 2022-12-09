@@ -1,0 +1,26 @@
+.header {
+	background: var(--gray-700);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 20rem;
+}
+
+.header .logo {
+	margin: 0 1rem;
+	color: var(--purple-dark);
+}
+
+.header .title strong {
+	font-weight: 900;
+	font-size: 4rem;
+	line-height: 4.8rem;
+}
+
+.header .title strong:first-child {
+	color: var(--blue);
+}
+
+.header .title strong:nth-child(2) {
+	color: var(--purple-dark);
+}

@@ -30,7 +30,7 @@
 .form button[type='submit'] {
 	height: 5.4rem;
 	width: 10rem;
-	padding: 0.5rem;
+	padding: 1.5rem;
 
 	background: var(--blue-dark);
 	border: 0.1rem solid var(--purple-dark);

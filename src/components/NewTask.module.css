@@ -25,6 +25,7 @@
 	flex: none;
 	order: 0;
 	flex-grow: initial;
+	color: var(--gray-100);
 }
 
 .form button[type='submit'] {

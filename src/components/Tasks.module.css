@@ -16,13 +16,34 @@
 	gap: 16px;
 }
 
-.count {
+.info {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 
 	width: 100%;
 	margin-bottom: 2.4rem;
+}
+
+.info > .done {
+	font-weight: 700;
+	font-size: 1.4rem;
+	line-height: 1.7rem;
+	color: var(--purple);
+}
+
+.info > .created {
+	font-weight: 700;
+	font-size: 1.4rem;
+	line-height: 1.7rem;
+	color: var(--blue);
+}
+
+.info .count {
+	background: var(--gray-400);
+	border-radius: 999px;
+	color: var(--gray-200);
+	padding: 0.75rem;
 }
 
 .empty {

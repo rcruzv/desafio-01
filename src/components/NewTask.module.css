@@ -1,59 +1,85 @@
-.form {
-	background: transparent;
+/* New Task */
+.newTaskForm {
 	display: flex;
 	flex-direction: row;
-	gap: 0.8rem;
-
-	justify-content: center;
 	align-items: center;
+	gap: 8px;
 
-	margin-top: calc(0px - 2.5rem);
+	position: absolute;
+	width: 73.6rem;
+	height: 5.4rem;
+	left: calc(50% - 73.6rem / 2);
+	top: 17.3rem;
 }
 
-.form input {
+.newTask {
 	box-sizing: border-box;
-
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	padding: 1.6rem;
-	width: 62.5rem;
+	gap: 8px;
+	width: 63.8rem;
 	height: 5.4rem;
-	margin: 0 1rem;
-
-	background: var(--gray-500);
-	border: 0.1rem solid var(--gray-700);
+	background: #262626;
+	border: 1px solid #0d0d0d;
 	border-radius: 8px;
+	flex: none;
+	order: 0;
+	flex-grow: 1;
+	color: var(--grey-300);
+}
+
+.newTaskButton {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 1.6rem;
+	gap: 8px;
+	width: 9rem;
+	height: 5.2rem;
+	background: var(--blue-dark);
+	border-radius: 8px;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+
+.newTaskButton:hover {
+	background: var(--blue);
+}
+
+.newTaskButton > span {
+	width: 3.4rem;
+	height: 2rem;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.4rem;
+	line-height: 2rem;
+	/* identical to box height, or 20px */
+
+	/* Gray 100 */
+
+	color: #f2f2f2;
+
+	/* Inside auto layout */
 
 	flex: none;
 	order: 0;
-	flex-grow: initial;
-	color: var(--gray-100);
+	flex-grow: 0;
 }
 
-.form button[type='submit'] {
-	height: 5.4rem;
-	width: 10rem;
-	padding: 1.5rem;
+.newTaskButtonIcon {
+	width: 1.6rem;
+	height: 1.6rem;
 
-	background: var(--blue-dark);
-	border: 0.1rem solid var(--purple-dark);
-	border-radius: 8px;
+	/* Inside auto layout */
 
 	flex: none;
 	order: 1;
 	flex-grow: 0;
-
-	color: var(--gray-100);
-
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-
-@media (max-width: 768px) {
-	.form input {
-		width: 40rem;
-	}
-
-	.form button[type='submit'] {
-		width: 10rem;
-	}
+	color: white;
 }

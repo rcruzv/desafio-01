@@ -1,3 +1,108 @@
-.content {
-	background: white;
+/* Task Item */
+.task {
+	/* Auto layout */
+
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 1.6rem;
+	gap: 12px;
+
+	width: 736px;
+	height: 72px;
+
+	/* Gray 500 */
+
+	background: #262626;
+	/* Gray 400 */
+
+	border: 1px solid #333333;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+	border-radius: 8px;
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 0;
+	align-self: stretch;
+	flex-grow: 0;
+}
+
+input[type='checkbox'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	cursor: pointer;
+	background: var(--gray-500);
+	border: 2px solid var(--blue);
+	border-radius: 50%;
+	padding: 0.45rem;
+	width: 2.4rem;
+	height: 2.4rem;
+	transition: border 0.2s, color 0.4s;
+}
+
+input[type='checkbox']:hover {
+	background: var(--blue-dark);
+}
+
+input[type='checkbox']:checked {
+	border: 2px solid var(--purple-dark);
+	background: var(--purple-dark) url('../assets/Vector.svg') center no-repeat;
+}
+
+input[type='checkbox']:checked:hover {
+	background: var(--purple) url('../assets/Vector.svg') center no-repeat;
+	border: 2px solid var(--purple);
+}
+
+input[type='checkbox']:checked + p {
+	text-decoration: line-through;
+	color: var(--gray-300);
+}
+
+.task p {
+	width: 632px;
+	height: 40px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 140%;
+	/* or 20px */
+
+	/* Gray 100 */
+
+	color: #f2f2f2;
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 1;
+	flex-grow: 1;
+}
+
+.task .trash {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 24px;
+	height: 24px;
+
+	border-radius: 4px;
+	/* Inside auto layout */
+
+	flex: none;
+	order: 2;
+	flex-grow: 0;
+}
+
+.task .trash:hover {
+	background: var(--gray-400);
+}
+
+.task .trash svg:hover {
+	color: var(--danger);
 }

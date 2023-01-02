@@ -1,0 +1,150 @@
+/* Task List */
+.tasksContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 2.4rem;
+
+	position: absolute;
+	width: 73.6rem;
+	height: 28.7rem;
+	left: calc(50% - 73.6rem / 2);
+	top: 29.1rem;
+}
+
+/* Tasks info */
+.tasksInfo {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	height: 1.9rem;
+	flex: none;
+	order: 0;
+	align-self: stretch;
+	flex-grow: 0;
+}
+
+.created {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+	font-size: 1.6rem;
+
+	color: var(--blue);
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.done {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+	font-size: 1.6rem;
+	color: var(--purple);
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+
+.counter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0.2rem 0.8rem;
+	gap: 10px;
+
+	/* Gray 400 */
+
+	background: #333333;
+	border-radius: 999px;
+	color: var(--gray-200);
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+
+/* taskListEmpty */
+.taskListEmpty {
+	box-sizing: border-box;
+
+	/* Auto layout */
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 6.4rem 2.4rem;
+	gap: 16px;
+
+	width: 73.6rem;
+	height: 24.4rem;
+
+	/* Grey 400 */
+
+	border-top: 1px solid #333333;
+	border-radius: 8px;
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 1;
+	align-self: stretch;
+	flex-grow: 0;
+}
+
+.clipboard {
+	width: 5.6rem;
+	height: 5.6rem;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.taskListEmpty p {
+	width: 68.8rem;
+
+	font-weight: 700;
+	font-size: 1.6rem;
+	line-height: 140%;
+
+	text-align: center;
+
+	color: var(--gray-300);
+
+	flex: none;
+	order: 1;
+	align-self: stretch;
+	flex-grow: 0;
+}
+
+/* taskList */
+.taskList {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 12px;
+
+	width: 736px;
+	height: 408px;
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 1;
+	align-self: stretch;
+	flex-grow: 0;
+}
